@@ -80,19 +80,7 @@ install_woocommerce() {
     git config --list
     git status
 
-    git config core.autocrlf false
-    git status
-
-    git config core.autocrlf input
-    git status
-
-    git config core.eol LF
-    git status
-
-    git config core.autocrlf true
-    git status
-
-    git config core.eol CRLF
+    git stash
     git status
 
     if [[ ! $WC_VERSION == 'latest' ]]; then
