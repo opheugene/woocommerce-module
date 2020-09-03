@@ -80,6 +80,10 @@ install_woocommerce() {
     git config --list
     git status
 
+    git config --global user.email "you@example.com"
+    git config --global user.name "Your Name"
+
+    git add .
     git stash
     git status
 
